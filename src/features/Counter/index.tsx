@@ -19,7 +19,7 @@ const Counter: React.FC = () => {
       </Link>
       <header className={styles.header}>
         <img src={logo} className={styles.logo} alt="logo" />
-        <h1>Hello Vite + Redux-Toolkit & RTK Query!</h1>
+        <h1>Hello Ylang + Redux-Toolkit & RTK Query!</h1>
       </header>
 
       <section className={styles.buttonSection}>

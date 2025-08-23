@@ -8,7 +8,7 @@ test('Show App Component', () => {
   render(<App />)
 
   expect(
-    screen.getByText('Hello Vite + Redux-Toolkit & RTK Query!'),
+    screen.getByText('Hello Ylang + Redux-Toolkit & RTK Query!'),
   ).toBeInTheDocument()
 })
 
