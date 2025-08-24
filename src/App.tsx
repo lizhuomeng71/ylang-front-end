@@ -18,7 +18,7 @@ import Cart from './pages/ecommerce/Cart'
 import Cart2 from './pages/ecommerce/Cart2'
 import Cart3 from './pages/ecommerce/Cart3'
 import Pay from './pages/ecommerce/Pay'
-import CreditCards from './pages/finance/CreditCards'
+import Accounts from './pages/finance/Accounts'
 import Transactions from './pages/finance/Transactions'
 import Account from './pages/settings/Account'
 import Notifications from './pages/settings/Notifications'
@@ -73,7 +73,7 @@ const App: React.FC = () => {
           <Route path="/ecommerce/cart-2" element={<Cart2 />} />
           <Route path="/ecommerce/cart-3" element={<Cart3 />} />
           <Route path="/ecommerce/pay" element={<Pay />} />
-          <Route path="/finance/cards" element={<CreditCards />} />
+          <Route path="/finance/accounts" element={<Accounts />} />
           <Route path="/finance/transactions" element={<Transactions />} />
           <Route path="/settings/account" element={<Account />} />
           <Route path="/settings/notifications" element={<Notifications />} />

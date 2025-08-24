@@ -270,7 +270,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen, variant = 'default' }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/finance/cards"
+                              to="/finance/accounts"
                               className={({ isActive }) =>
                                 'block truncate transition duration-150 ' +
                                 (isActive
