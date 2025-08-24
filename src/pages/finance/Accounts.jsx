@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import Sidebar from '../../partials/Sidebar'
 import Header from '../../partials/Header'
-import CreditCard from '../../components/CreditCard'
+import AccountRow from '../../components/AccountRow'
 
 function Accounts() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -67,7 +67,7 @@ function Accounts() {
 
               {/* Credit cards */}
               <div className="space-y-2">
-                <CreditCard
+                <AccountRow
                   cardType="_Metal"
                   cardNumber="**7328"
                   holderName="Dominik Lamakani"
@@ -82,7 +82,7 @@ function Accounts() {
                     end: '#9FA1FF'
                   }}
                 />
-                <CreditCard
+                <AccountRow
                   cardType="_Virtual"
                   cardNumber="**7377"
                   holderName="Dominik Lamakani"

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CreditCard({
+function AccountRow({
   cardType = '_Metal',
   cardNumber = '**7328',
   holderName = 'Dominik Lamakani',
@@ -120,4 +120,4 @@ function CreditCard({
   )
 }
 
-export default CreditCard
+export default AccountRow
