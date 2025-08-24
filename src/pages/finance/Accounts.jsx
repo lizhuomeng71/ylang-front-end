@@ -54,12 +54,22 @@ function Accounts() {
                   </li>
                   <li className="m-1">
                     <button className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm leading-5 font-medium text-gray-500 shadow-xs transition hover:border-gray-300 dark:border-gray-700/60 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600">
-                      Physical Cards
+                      Assets
                     </button>
                   </li>
                   <li className="m-1">
                     <button className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm leading-5 font-medium text-gray-500 shadow-xs transition hover:border-gray-300 dark:border-gray-700/60 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600">
-                      Virtual Cards
+                      Liabilities
+                    </button>
+                  </li>
+                  <li className="m-1">
+                    <button className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm leading-5 font-medium text-gray-500 shadow-xs transition hover:border-gray-300 dark:border-gray-700/60 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600">
+                      Revenue
+                    </button>
+                  </li>
+                  <li className="m-1">
+                    <button className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm leading-5 font-medium text-gray-500 shadow-xs transition hover:border-gray-300 dark:border-gray-700/60 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600">
+                      Expenses
                     </button>
                   </li>
                 </ul>
@@ -68,34 +78,39 @@ function Accounts() {
               {/* Credit cards */}
               <div className="space-y-2">
                 <AccountRow
-                  cardType="_Metal"
-                  cardNumber="**7328"
-                  holderName="Dominik Lamakani"
-                  currentLimit="$780,00"
-                  totalLimit="$20,000"
+                  accountName="Cash in Bank"
+                  accountType="Asset"
+                  currentBalance="$25,430.50"
                   status="Active"
                   isChecked={true}
-                  gradientId="c1-a"
-                  gradientColors={{
-                    start: '#4B5563',
-                    middle: '#1F2937',
-                    end: '#9FA1FF'
-                  }}
                 />
                 <AccountRow
-                  cardType="_Virtual"
-                  cardNumber="**7377"
-                  holderName="Dominik Lamakani"
-                  currentLimit="$0"
-                  totalLimit="$20,000"
-                  status="Blocked"
+                  accountName="Accounts Payable"
+                  accountType="Liability"
+                  currentBalance="$8,750.00"
+                  status="Active"
                   isChecked={false}
-                  gradientId="c2a"
-                  gradientColors={{
-                    start: '#4634B1',
-                    middle: '#9FA1FF',
-                    end: '#9FA1FF'
-                  }}
+                />
+                <AccountRow
+                  accountName="Sales Revenue"
+                  accountType="Revenue"
+                  currentBalance="$45,200.75"
+                  status="Active"
+                  isChecked={false}
+                />
+                <AccountRow
+                  accountName="Office Supplies"
+                  accountType="Expense"
+                  currentBalance="$1,250.30"
+                  status="Active"
+                  isChecked={false}
+                />
+                <AccountRow
+                  accountName="Retained Earnings"
+                  accountType="Equity"
+                  currentBalance="$15,680.95"
+                  status="Inactive"
+                  isChecked={false}
                 />
               </div>
             </div>
